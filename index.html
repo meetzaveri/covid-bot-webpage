@@ -2,19 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/covid.png" />
+    <link rel="icon" href="/covid.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Covid-19 Resource Verification Bot Page"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/covid.png" />
+    <link rel="apple-touch-icon" href="/covid.png" />
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -25,10 +26,34 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>COVID-19 Resource Verification</title>
+    <link type="text/css" rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div class="App">
+      <h3>COVID-19 Resource Verification bot</h3>
+      <h3>
+        Please note that this bot is unofficial and its simply made for
+        verification check purpose
+      </h3>
+      <div class="text-xl mt-16">3 simple commands</div>
+      <div class="py-2">
+        <div class="py-2">
+          - <span class="font-bold">"@covid_src verify "</span> (This gives you
+          overall verification votes for resource)
+        </div>
+        <div class="py-2">
+          - <span class="font-bold">"@covid_src verify true "</span> (this
+          registers "true" vote for resource verification)
+        </div>
+        <div class="py-2">
+          - <span class="font-bold">"@covid_src verify false "</span>(this
+          registers "false" vote for resource verification)
+        </div>
+      </div>
+      <h3 class="py-2 mt-16">How it works</h3>
+      <img class="py-2 img-container" src="./how_it_works.png" />
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
